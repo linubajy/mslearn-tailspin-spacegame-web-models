@@ -1,5 +1,5 @@
 pool:
-  vmImage: 'Ubuntu-18.04'
+  vmImage: 'Ubuntu-16.04'
 
 variables:
   buildConfiguration: 'Release'
@@ -39,6 +39,6 @@ steps:
   displayName: 'Publish NuGet package'
   inputs:
     command: push
-    publishVstsFeed: 'Space Game - web - Dependencies/Tailspin.SpaceGame.Web.Models'
+    publishVstsFeed: 'TailSpinGame/Tailspin.SpaceGame.Web.Models'
     allowPackageConflicts: true
   condition: succeeded()
